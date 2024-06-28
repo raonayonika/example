@@ -1,4 +1,4 @@
- from example_project.module1 import main
+from example_project.module1 import main
 
 def test_main(capfd):
     main()
