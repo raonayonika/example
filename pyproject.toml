@@ -1,1 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "example"
+version = "0.1.0"
+description = "An example project to demonstrate documentation "
+authors = ["Nayonika Rao <raonayonika@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/raonayonika/example"
+repository = "https://github.com/raonayonika/example"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+numpy = "^1.20.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[tool.poetry.scripts]
+example = "example_project.module1:main"
+
 
