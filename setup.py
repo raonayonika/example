@@ -1,26 +1,40 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='example',  # The name of the package
-    version='0.1.0',  # The initial release version
-    packages=find_packages(),  # Automatically find and include all packages in the project
+    # The name of the package
+    name='example',
+    # The initial release version
+    version='0.1.0',
+    # Automatically find and include all packages in the project
+    packages=find_packages(),
     install_requires=[
-        'requests',  # External package dependency
-        'numpy',  # Another external package dependency
+        # External package dependency
+        'requests',
+        # Another external package dependency
+        'numpy',
     ],
     entry_points={
         'console_scripts': [
-            'example=example.my_project.module:main',  # Command-line script entry point
+            # Command-line script entry point
+            'example=example.my_project.module:main',
         ],
     },
-    author='Nayonika Rao',  # Author's name
-    author_email='raonayonika@gmail.com',  # Author's email
-    description='An example project to demonstrate documentation',  # Short project description
-    url='https://github.com/raonayonika/example',  # URL for the project homepage
+    # Author's name
+    author='Nayonika Rao',
+    # Author's email
+    author_email='raonayonika@gmail.com',
+    # Short project description
+    description='An example project to demonstrate documentation',
+    # URL for the project homepage
+    url='https://github.com/raonayonika/example',
     classifiers=[
-        'Programming Language :: Python :: 3',  # Python version compatibility
-        'License :: OSI Approved :: MIT License',  # License type
-        'Operating System :: OS Independent',  # OS compatibility
+        # Python version compatibility
+        'Programming Language :: Python :: 3',
+        # License type
+        'License :: OSI Approved :: MIT License',
+        # OS compatibility
+        'Operating System :: OS Independent',
     ],
 )
+
 
