@@ -1,27 +1,42 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]  # Specifies the build system requirements. These packages are needed to build the project.
-build-backend = "setuptools.build_meta"  # Indicates the backend to use for building the project.
+# Specifies the build system requirements. These packages are needed to build the project.
+requires = ["setuptools>=42", "wheel"]
+# Indicates the backend to use for building the project.
+build-backend = "setuptools.build_meta"
 
 [tool.poetry]
-name = "example"  # The name of the project/package.
-version = "0.1.0"  # The current version of the project/package.
-description = "An example project to demonstrate documentation"  # A short description of the project.
-authors = ["Nayonika Rao <raonayonika@gmail.com>"]  # The author's name and email.
-license = "MIT"  # The license under which the project is released.
-readme = "README.md"  # The file to use as the README for the project.
-homepage = "https://github.com/raonayonika/example"  # The URL for the project's homepage.
-repository = "https://github.com/raonayonika/example"  # The URL for the project's source code repository.
+# The name of the project/package.
+name = "example"
+# The current version of the project/package.
+version = "0.1.0"
+# A short description of the project.
+description = "An example project to demonstrate documentation"
+# The author's name and email.
+authors = ["Nayonika Rao <raonayonika@gmail.com>"]
+# The license under which the project is released.
+license = "MIT"
+# The file to use as the README for the project.
+readme = "README.md"
+# The URL for the project's homepage.
+homepage = "https://github.com/raonayonika/example"
+# The URL for the project's source code repository.
+repository = "https://github.com/raonayonika/example"
 
 [tool.poetry.dependencies]
-python = "^3.8"  # Specifies the Python version compatibility.
-requests = "^2.25.1"  # Specifies the version of the 'requests' package required.
-numpy = "^1.20.0"  # Specifies the version of the 'numpy' package required.
+# Specifies the Python version compatibility.
+python = "^3.8"
+# Specifies the version of the 'requests' package required.
+requests = "^2.25.1"
+# Specifies the version of the 'numpy' package required.
+numpy = "^1.20.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.2"  # Specifies the version of the 'pytest' package required for development.
+# Specifies the version of the 'pytest' package required for development.
+pytest = "^6.2.2"
 
 [tool.poetry.scripts]
-example = "example_project.module1:main"  # Defines a command-line script named 'example' that runs the 'main' function from 'example_project.module1'.
+# Defines a command-line script named 'example' that runs the 'main' function from 'example_project.module1'.
+example = "example_project.module1:main"
 
 
 
