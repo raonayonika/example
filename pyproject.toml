@@ -1,26 +1,27 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["setuptools>=42", "wheel"]  # Specifies the build system requirements. These packages are needed to build the project.
+build-backend = "setuptools.build_meta"  # Indicates the backend to use for building the project.
 
 [tool.poetry]
-name = "example"
-version = "0.1.0"
-description = "An example project to demonstrate documentation "
-authors = ["Nayonika Rao <raonayonika@gmail.com>"]
-license = "MIT"
-readme = "README.md"
-homepage = "https://github.com/raonayonika/example"
-repository = "https://github.com/raonayonika/example"
+name = "example"  # The name of the project/package.
+version = "0.1.0"  # The current version of the project/package.
+description = "An example project to demonstrate documentation"  # A short description of the project.
+authors = ["Nayonika Rao <raonayonika@gmail.com>"]  # The author's name and email.
+license = "MIT"  # The license under which the project is released.
+readme = "README.md"  # The file to use as the README for the project.
+homepage = "https://github.com/raonayonika/example"  # The URL for the project's homepage.
+repository = "https://github.com/raonayonika/example"  # The URL for the project's source code repository.
 
 [tool.poetry.dependencies]
-python = "^3.8"
-requests = "^2.25.1"
-numpy = "^1.20.0"
+python = "^3.8"  # Specifies the Python version compatibility.
+requests = "^2.25.1"  # Specifies the version of the 'requests' package required.
+numpy = "^1.20.0"  # Specifies the version of the 'numpy' package required.
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.2"
+pytest = "^6.2.2"  # Specifies the version of the 'pytest' package required for development.
 
 [tool.poetry.scripts]
-example = "example_project.module1:main"
+example = "example_project.module1:main"  # Defines a command-line script named 'example' that runs the 'main' function from 'example_project.module1'.
+
 
 
