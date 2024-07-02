@@ -8,7 +8,6 @@ This is the process of installing packages or libraries in a specific directory 
 
 ## Folder Structures
 One of the most important parts of documenting a project is the folder structure that is to be followed. It is essential to follow a structured approach in order to maintain consistency and modularity. Maintaining a constant naming convention is also essential. It is also important to keep your code modular. It is essential to package the libraries before importing them in your executable files.
-
 ![<img width="316" alt="Screenshot 2024-06-28 at 11 52 55 AM" src="https://github.com/raonayonika/example/assets/162417341/b4d22e8a-09e7-4c4f-aa73-f47cb5a552c2">]
 
 A common error or mistake while importing a library in your executable file would be not mentioning the right or full path to the library module. An ___init__.py_ file plays a crucial role in turning a directory into a package, which allows for proper importing of modules within that directory. The presence of this file in a directory signals to Python that the directory is a package, enabling the interpreter to recognize and import its modules using the package name.
